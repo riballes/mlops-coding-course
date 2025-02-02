@@ -78,7 +78,16 @@ uv --version
 ## Enable Virtual Environments Automatically
 `uv` respects existing virtual environments but doesn’t create them automatically. To ensure every project has its own:
 ```
-python -m venv .venv
+uv venv <env_name>
+```
+Activate environment:
+```
+source <env_name>/bin/activate
+```
+Save ir to .envrc for auto virtual environment switching:
+```
+echo 'source <env_name>/bin/activate' > .envrc
+direnv allow
 ```
 
 
