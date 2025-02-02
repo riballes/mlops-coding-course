@@ -63,3 +63,22 @@ Feel free to [submit pull requests](https://github.com/MLOps-Courses/mlops-codin
 ## Donations
 
 If you find this course helpful and would like to support its creators, you can make a donation via [Stripe](https://donate.stripe.com/4gw8xT9oVbCc98s7ss).
+
+# Personal Notes
+
+Using `uv` instead of `pip` or `poetry`
+Install [uv using homebrew](https://docs.astral.sh/uv/getting-started/installation/#homebrew):
+```
+brew install uv
+```
+Verify installation
+```
+uv --version
+```
+## Enable Virtual Environments Automatically
+`uv` respects existing virtual environments but doesn’t create them automatically. To ensure every project has its own:
+```
+python -m venv .venv
+```
+
+
